@@ -1,0 +1,100 @@
+
+El DOCTYPE no es obligatorio, pero sí muy necesario
+No es obligatorio, pero es importante indicar el idioma principal de una página web
+Conviene indicar el juego de caracteres empleado
+
+World Wide Web
+World Wide Web
+
+Si se emplea correctamente el juego de caracteres, no es necesario emplear las entidades HTML como 
+En informática, la World Wide Web (WWW) o Red informática mundial comúnmente conocida
+como la web, es un sistema de distribución de documentos de hipertexto o hipermedios interconectados y
+accesibles vía Internet. Con un navegador web, un usuario visualiza sitios web compuestos de páginas web que
+pueden contener texto, imágenes, vídeos u otros contenidos multimedia, y navega a través de esas páginas usando
+hiperenlaces.
+    
+
+Conviene seguir una secuencia lógica en los encabezados y no omitir niveles
+
+Los tres pilares de la Web
+
+"http://es.wikipedia.org/wiki/Tim_Berners-Lee" 
+Tim Berners-Lee
+ es considerado el padre de la Web
+porque desarrolló los tres elementos básicos para el funcionamiento de la
+"http://es.wikipedia.org/wiki/World_Wide_Web"
+Web
+HTML
+HTTP
+URL
+
+Nombre completo: Bruce Wayne
+Fecha de nacimiento: 1/5/1939
+Lugar de nacimiento: Gotham City
+    
+Las etiquetas siempre se tienen que cerrar
+
+Contenido
+
+Principales protocolos
+Formas de conectarse
+1. Principales protocolos
+Transmisión de ficheros:
+FTP
+Correo electrónico:
+IMAP
+POP
+SMTP
+
+Imagenes
+imagenes/32.jpeg
+    
+Tablas
+Categoría
+Etiquetas
+Formulario
+form
+button
+input
+select
+textarea
+        
+Tabla
+table
+tr
+th
+td
+caption
+Texto
+b
+em
+i
+strong
+sub
+sup
+
+Videos
+media/Binomio_de_oro_Como_duele_el_frio.mp4
+media/Binomio_de_oro_Como_duele_el_frio.mp4
+
+Audio
+media/bendita_la_luz.mp3
+
+
+Formulario de registro
+Nombre
+Apellidos
+Sexo:
+Correo:
+Población:
+Alicante
+Madrid
+Sevilla
+Valencia
+
+Descripción:
+Deseo recibir
+información sobre novedades y ofertas
+Declaro haber leido
+y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+Enviar

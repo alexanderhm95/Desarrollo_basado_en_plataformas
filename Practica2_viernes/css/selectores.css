@@ -1,0 +1,31 @@
+#fila1{
+    color: teal;
+}
+#fila2{
+    color: red;
+}
+#fila3{
+    color: rosybrown;
+}
+#fila4{
+    color: rgb(46, 146, 146);
+}
+#fila5{
+    color: rgb(218, 157, 157);
+}
+#fila6{
+    color: rgb(44, 138, 167);
+}
+
+#fila7{
+    color: rgb(170, 75, 224);
+}
+#fila8{
+    color: rgb(48, 221, 63);
+}
+td+td{
+    background-color: slategrey;
+}
+td+td+td{
+    background-color: saddlebrown;
+}
