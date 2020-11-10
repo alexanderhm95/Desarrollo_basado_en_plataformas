@@ -5,5 +5,26 @@ ul.nav{
     list-style: none;
     display: block;
     width: 200px;
-    
+    position: relative;
+    top:50px ;
+    left: 100px;
+    padding: 60px 0 60px 0;
+
+}
+ul.nav li a {
+    transition: all 0.3s ease-out;
+    background: rebeccapurple;
+    color: black;
+    padding: 7px 15px 7px 15px;
+    border-radius: 10px ;
+    width: 100px;
+    height: 50px;
+    display: block;
+    box-shadow: -5px 5px violet;
+}
+ul.nav li a:hover{
+    background: yellowgreen;
+    color: aqua;
+    padding: 7px 15 7px 30px;
+
 }
