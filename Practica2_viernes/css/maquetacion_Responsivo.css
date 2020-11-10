@@ -1,3 +1,49 @@
 #formacion li, #experiencia li{
     color: blueviolet;
 }
+#formacion li strong,#experiencia li strong{
+
+    color: springgreen;
+}
+@media (min-width:12001px){
+    #datos{
+        float: left;
+        width: 30%;
+    }
+    #curriculo{
+        float: left;
+        width: 70%;
+    }
+    #formacion{
+        float: left;
+        width: 50%;
+    }
+    #experiencia{
+        float: left;
+        width: 50%;
+    }
+}
+@media (min-width:601px) and(max-width:1200px){
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #datos{
+        float: left;
+        width: 30%;
+    }
+    #curriculo{
+        float: left;
+        width:70%;
+    }
+#datos li +li{
+    margin-top: 10px;
+}
+    #datos li strong{
+      display: block;
+    }
+}
+@media(max-width:600px){
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
