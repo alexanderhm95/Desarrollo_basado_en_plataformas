@@ -14,5 +14,28 @@ ul.fotos a{
     columns: #333333;
     font-size: 10px;
     box-shadow: 10px 3px 6px rgba(0,100,100,.25);
-
+    transform: rotate(2deg);
+}
+ul.fotos img{
+    display: block;
+    width: 100px;
+    margin-bottom: 12px;
+}
+ul.fotos a::after{
+    content:attr(title);
+}
+ul.fotos li:nth-child(3n) a{
+    transform: none;
+    position: relative;
+    top: -5px;
+}
+ul.fotos li:nth-child(5n) a{
+    transform: rotate(-5deg);
+    position: relative;
+    top: -5px;
+}
+ul.fotos li a:hover{
+    transform: scale(1.25);
+    box-shadow: 0 3px 6px rgba(0,0,0,.5);
+    position: relative;
 }
