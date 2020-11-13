@@ -1,17 +1,232 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="utf-8"/>
-        <title>Menú</title>
-    </head>
-    <body>
-        <h2>Desarrollo de Aplicaciones Web (Curso 2020)</h2>
-        <h3>Practicas</h3>
-        <ul>
-            <li><a href="componentes.html">Practica      1: Html - Componentes</a></li>
-            <li><a href="reglas_estilos.html">Practica 2: Css - Reglas de Estilo Básica</a></li>
-            <li><a href="Practica2_viernes/selectores.html">Practica 3: Selectores</a></li>
-            <li><a href="Practica2_viernes/selectores.html">Practica 3: Selectores</a></li>
-        </ul>
-    </body>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="app.js">
+
+    <title>GUIA HOTELES!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Hoteles</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home </a></li>
+                <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tereminos y Condiciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <h1>Hoteles</h1>
+    </div>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-sm-4" >
+                <button class="btn btn-primary" type="button" date-toggle="collapse" data-target="#funciona"
+                    aria-expanded="false" aria-controls="multicollapse1">¿Como funciona?</button>
+            </div>
+            <div class="col-sm-4" >
+                <button class="btn btn-primary" type="button" date-toggle="collapse" data-target="#reserva"
+                    aria-expanded="false" aria-controls="multicollapse2">¿Donde puedo reservar?</button>
+            </div>
+            <div class="col-sm-4" >
+                <button class="btn btn-primary" type="button" date-toggle="collapse" data-target="#pago"
+                    aria-expanded="false" aria-controls="multicollapse3">¿Como?</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 collapse multi-collapse" id="funciona">
+                <p>
+                <h1>¿Como funciona?</h1>
+                <p>usca los hoteles de acuerdo atu preferencia.</p>
+                </p>
+            </div>
+            <div class="col-sm-4 collapse multi-collapse" id="reserva">
+                <p>
+                <h1>¿Donde puedo reservar?</h1>
+                <p>Elegi la ciudad que te interese y luego realiza la reserva</p>
+                </p>
+            </div>
+            <div class="col-sm-4 collapse multi-collapse" id="pago">
+                <p>
+                <h1>¿Como pago?</h1>
+                <p>Utiliza tu tarjeta favorita.</p>
+                </p>
+            </div>
+        </div>
+    <hr>
+
+    <div id="carouselControls" class="carousel slide" data-ride="carousel">
+        <div clas="carousel-inner">
+            <div class="carousel-item active">
+               <img class="d-block w-100" src="imagenes/colo.png" alt="Primer slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="imagenes/arge.png" alt="Segundo slide">
+            </div>
+             <div class="carousel-item">
+                <img class="d-block w-100" src="imagenes/peru.png" alt="Tercero slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">siguiente</span>
+        </a>
+    </div>
+
+    <div class="d-flex flex-wrap flex-row-reverse">
+        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+            <img src="imagenes/hotel2.jpg" class="card-img-top" alt="responsive imagenes">
+            <div class="card-body">
+                <h5 class="card-title">hotel colombia</h5>
+                <h6 class="card-subtitle text-muted">capital bogota</h6>
+                <p class="card-text">centro america</p>
+            </div>
+            <div>
+                <button class="btn btn-primary btn-reservas ">
+                    <span class="" oi oi-plus></span>reservas</button>
+            </div>
+        </div>
+
+        <div class=" card card-hotel d-flex flex-column justify-content-between ml-2">
+            <img src="imagenes/hotel2.jpg" class="card-img-top" alt="responsive imagenes">
+            <div class="card-body">
+                <h5 class="card-title" data-toggle="tooltip" data-placement="top" titel="las primeras resevas cuentas con clases de tango gratis">hotel mexico</h5>
+                <h6 class="card-subtitle text-muted">capital tijuana</h6>
+                <p class="card-text">centro america</p>
+            </div>
+            <div>
+                <button class="btn btn-primary btn-reservas"> reservas</button>
+            </div>
+        </div>
+
+        <div class=" card card-hotel d-flex flex-column justify-content-between ml-2">
+            <img src="imagenes/hotel2.jpg" class="card-img-top" alt="responsive imagenes">
+            <div class="card-body">
+                <h5 class="card-title">hotel peru</h5>
+                <h6 class="card-subtitle text-muted"></h6>capital lima</p>
+                <p class="card-text"> america</p>
+            </div>
+            <div>
+                <button class="btn btn-primary btn-reservas"> reservas</button>
+            </div>
+        </div>
+
+        <div class=" card card-hotel d-flex flex-column justify-content-between ml-2">
+            <img src="imagenes/hotel2.jpg" class="card-img-top" alt="responsive imagenes">
+            <div class="card-body">
+                <h5 class="card-title">hotel Argentina</h5>
+                <h6 class="card-subtitle text-muted"></h6>capital Buenos Aires</p>
+                <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> contacto</button>
+                <p class="card-text">sur america</p>
+                
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary btn-reservas" data-toggle="popover" title="Promociones" data-content="Consulta las promociones vigentes"> reservas</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contacto con el Hotel</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Tu email:</label>
+                            <input type="text" class="from-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Mensaje</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+        <footer>
+            <div class="row">
+                <div class="col-sm-4 d-flex flex-column">
+                    <a href="http://www.facebook.com">Facebook</a>
+                    <a href="http://www.twiter.com">Twitter</a>
+                    <a href="http://www.instagran.com">Instagran</a>
+                    <a href="http://www.google.com">Google</a>
+                </div>
+                <div class="col-sm-4">
+                    <address>
+                        <h3>oficina central</h3>
+                        <p><span class="oi oi-home footer-address-icon"></span>Medellin Antioquia Colombia</p>
+                        <p><span class="oi oi-phone footer-address-icon"></span>+231342455</p>
+                        <p><span class="oi oi-inbox footer-address-icon"></span>contacto@hoteles.com</p>
+                    </address>
+                </div>
+
+                <div class="col-sm-4 d-flex-column align-items-end">
+                    <a href="http://www.facebook.com">Nosotros</a>
+                    <a href="http://www.twiter.comer">Precios</a>
+                    <a href="http://www.instagran.com">Terminos y Condiciones</a>
+                    <a href="http://www.google.com">Contactos</a>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
+        <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+        <script>
+            $(function(){
+                $("[data-toggle='tooltip']").tooltip();
+                $("[data-toggle='popover']").popover();
+                $('.carousel').carousel({
+                    interval:2500
+                })
+
+            });
+        </script>
+</body>
+
+
 </html>
