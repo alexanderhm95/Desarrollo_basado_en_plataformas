@@ -1,23 +1,27 @@
-function saludar(){
-    alert("hola mundo")
+function saludar() {
+    alert("Hola mi primer script");
 }
-function sumar(){
+
+function sumar() {
     numero1 = parseInt(document.getElementById("n1").value);
     numero2 = parseInt(document.getElementById("n2").value);
     resultado = numero1 + numero2;
     alert("La suma es: " + resultado);
 }
+
 function invertir(){
     var cadenaObtenida = document.getElementById("cadena").innerText;
-    var vector = cadenaObtenida.split(''); // arreglo de caracteres
-    var reversa = vector.reverse(); // invertir el arreglo
-    var cadenInvertida = reversa.join('');  // une el arreglo en una sola cadena
-    document.write(cadenInvertida);
+    var vector = cadenaObtenida.split("");
+    var reversa = vector.reverse();
+    var cadenaInvertida = reversa.join("");
+    document.write(cadenaInvertida);
 }
 
-function validarFomulario(){
+function validarFormulario(){
     var nombres = document.getElementById("nombres");
-    if(nombres == ""){
+    if(nombres.value == ""){
         alert("Por favor dígite el usuario");
     }
 }
+
+
