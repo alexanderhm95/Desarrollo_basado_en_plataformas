@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <script type="text/javascript" src="js/operaciones_mat.js"></script>
-    <title>Document</title>
-</head>
-<body>
-    <h2>Operaciones Básicas</h2>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Calculadora JS</title>
+        <script type="text/javascript" src="js/operaciones_matematicas.js"></script>
+    </head>
+    <body>
+        <h2>Operaciones Básicas</h2>
         <ul>
             <li>1= Sumar</li>
             <li>2= Restar</li>
@@ -22,8 +20,13 @@
             <input type="text" name="n2" id="n2"><br>
             <label>Ingresar Operación</label>
             <input type="text" name="op" id="op"><br>
-            <input type="button" onclick="realizar_operación" value="Relalizar operación">
+            <input type="button" onclick="realizar_operación()" value="Relalizar operación">
         </form>
-
-</body>
+        <div id="resultado"></div>
+    </body>
 </html>
+
+
+
+
+
