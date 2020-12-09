@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ajax y PHP</title>
+    <script>
+          function holaMundo () {
+	// Instanciamos el objecto XMLHttpRequest
+	ajax = ajaxobj();
+	// Abrimos la conexión al script
+	ajax.open("GET", "holamundo.php", true);
+	// Indicamos que función vigila el cambio de estado
+	ajax.onreadystatechange=function() {
+		if (ajax.readyState == 4) {
+			// Mostramos resultado
+			alert(ajax.responseText);
+		}
+	}
+	// Enviamos algo para que funcione el proceso
+	ajax.send(null);
+}
+    </script>
+</head>
+
+<body>
+    <h2>Mis Clientes</h2>
+    <form method="post" id="formulario">
+		<label>Ingrese el nombre de un cliente: </label>
+		<input type="text" name="nombre">
+		<input type="button" id="enviar" value="Enviar">
+        <input type="button" onclick="holaMundo()" value="Hola mundo" />
+
+    </form>
+	<div id="resultado"> </div>
+
+</body>
+
+</html>
